@@ -20,6 +20,6 @@ def predict_sentiment(model , text):
         return "Positive" if pred.argmax(1).item() == 1 else "Negative"
 
 
-print(predict_sentiment(model, "The Sky is beautiful"))
+print(predict_sentiment(model, "The Sky is beautiful")) #just to test changes
 
 
