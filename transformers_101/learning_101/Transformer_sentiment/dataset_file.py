@@ -58,7 +58,6 @@ def collate_batch(batch, max_length=None):
 
 #reloads the train data cause we already used it for the vocab
 
-#train_iter = dataset["train"]
 train_loader = DataLoader(train_data,
                           collate_fn=lambda batch: collate_batch(batch, 512)
                           , shuffle=True, batch_size=32)

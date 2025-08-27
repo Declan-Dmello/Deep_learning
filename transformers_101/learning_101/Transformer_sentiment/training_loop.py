@@ -4,7 +4,6 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 import torch.nn as nn
 from model import TransformerClassifier
 from dataset_file import train_loader, encode_text, word2idx
-#from torchtext.data.utils import get_tokenizer
 print("Training loop")
 
 device = "cuda" if torch.cuda.is_available() else "cpu"

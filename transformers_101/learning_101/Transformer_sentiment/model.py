@@ -1,5 +1,4 @@
 import torch.nn as nn
-import math
 
 from Deep_learning.transformers_101.learning_101.tiny_transformer.model import PositionalEncoding, TransformerBlock
 
@@ -18,6 +17,7 @@ class TransformerClassifier(nn.Module):
         x = self.transformer(x)
         x = x.mean(dim=1)
         return self.fc(x)
+
 
 
 
